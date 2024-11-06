@@ -1,0 +1,4 @@
+[ 2024-11-05 23:01:44,199 ] 30 root - INFO - Data ingestion is started
+[ 2024-11-05 23:01:44,199 ] 33 root - INFO - GitHub url is created
+[ 2024-11-05 23:01:44,886 ] 37 root - INFO - Dataset is retrieve from the github
+[ 2024-11-05 23:01:44,903 ] 42 root - INFO - Dataset is unzipped and saved

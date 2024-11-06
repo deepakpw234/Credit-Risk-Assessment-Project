@@ -27,12 +27,19 @@ class DataIngestion:
 
     def initiate_data_ingestion(self):
         try:
+            logging.info("Data ingestion is started")
             github_url = "https://github.com/deepakpw234/Project-Datasets/raw/refs/heads/main/credit_risk_dataset.zip"
+
+            logging.info("GitHub url is created")
 
             urllib.request.urlretrieve(github_url,self.data_ingestion_config.zip_dataset_path)
 
+            logging.info("Dataset is retrieve from the github")
+
             with zipfile.ZipFile(self.data_ingestion_config.zip_dataset_path,"r") as zip_ref:
                 zip_ref.extractall(self.data_ingestion_config.dataset_path)
+
+            logging.info("Dataset is unzipped and saved")
 
         except Exception as e:
             raise CustomException(e,sys)
