@@ -1,0 +1,21 @@
+[ 2024-11-08 17:36:54,099 ] 30 root - INFO - Data ingestion is started
+[ 2024-11-08 17:36:54,099 ] 33 root - INFO - GitHub url is created
+[ 2024-11-08 17:36:54,321 ] 37 root - INFO - Dataset is retrieve from the github
+[ 2024-11-08 17:36:54,339 ] 42 root - INFO - Dataset is unzipped and saved
+[ 2024-11-08 17:36:54,339 ] 24 root - INFO - Data cleaning is started
+[ 2024-11-08 17:36:54,378 ] 26 root - INFO - Dataset is loaded in the dataframe
+[ 2024-11-08 17:36:54,397 ] 30 root - INFO - Duplicate rows are dropped from the dataframe
+[ 2024-11-08 17:36:54,401 ] 36 root - INFO - Unrealistic values are deleted from the dataframe
+[ 2024-11-08 17:36:54,401 ] 42 root - INFO - Data cleaning ended
+[ 2024-11-08 17:36:54,401 ] 71 root - INFO - Data transforamtion Stage 1 is started
+[ 2024-11-08 17:36:54,406 ] 74 root - INFO - Train test split performed
+[ 2024-11-08 17:36:54,410 ] 87 root - INFO - training and test dataset is created
+[ 2024-11-08 17:36:54,410 ] 33 root - INFO - Preprocessing started
+[ 2024-11-08 17:36:54,410 ] 37 root - INFO - columns are divided by their category and saved in varible
+[ 2024-11-08 17:36:54,411 ] 46 root - INFO - catgorical pipeline created
+[ 2024-11-08 17:36:54,411 ] 54 root - INFO - numerical pipeline created
+[ 2024-11-08 17:36:54,411 ] 61 root - INFO - Columns are transformed by columntransformer
+[ 2024-11-08 17:36:54,411 ] 92 root - INFO - preprocessor is loaded
+[ 2024-11-08 17:36:54,413 ] 98 root - INFO - preprocessor is saved as pickle file
+[ 2024-11-08 17:36:54,557 ] 103 root - INFO - fit and transform performed
+[ 2024-11-08 17:36:54,612 ] 126 root - INFO - Data transforamtion Stage 1 is completed

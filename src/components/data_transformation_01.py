@@ -15,11 +15,12 @@ from sklearn.pipeline import Pipeline
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import SimpleImputer, IterativeImputer
 
+from src.utils import save_object
 
 
 @dataclass
 class DataTransformation1Config:
-    transform_dataset = os.path.join(os.getcwd(),"artifacts")
+    preprocessor_path = os.path.join(os.getcwd(),"artifacts","model","preprocessor.pkl")
 
 
 class DataTransformation1:
@@ -89,6 +90,12 @@ class DataTransformation1:
             preprocessor = self.get_data_preprocessor()
 
             logging.info("preprocessor is loaded")
+
+            save_object(
+                self.data_transformation1_config.preprocessor_path,
+                preprocessor
+            )
+            logging.info("preprocessor is saved as pickle file")
 
             X_train_arr = preprocessor.fit_transform(X_train)
             X_test_arr = preprocessor.transform(X_test)
