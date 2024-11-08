@@ -7,4 +7,5 @@ Flask
 keras
 tensorflow
 dill
+imbalanced-learn
 # -e .

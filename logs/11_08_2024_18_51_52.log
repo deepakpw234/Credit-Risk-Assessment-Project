@@ -1,0 +1,27 @@
+[ 2024-11-08 18:51:57,399 ] 30 root - INFO - Data ingestion is started
+[ 2024-11-08 18:51:57,399 ] 33 root - INFO - GitHub url is created
+[ 2024-11-08 18:51:58,501 ] 37 root - INFO - Dataset is retrieve from the github
+[ 2024-11-08 18:51:58,534 ] 42 root - INFO - Dataset is unzipped and saved
+[ 2024-11-08 18:51:58,534 ] 24 root - INFO - Data cleaning is started
+[ 2024-11-08 18:51:58,604 ] 26 root - INFO - Dataset is loaded in the dataframe
+[ 2024-11-08 18:51:58,634 ] 30 root - INFO - Duplicate rows are dropped from the dataframe
+[ 2024-11-08 18:51:58,641 ] 36 root - INFO - Unrealistic values are deleted from the dataframe
+[ 2024-11-08 18:51:58,641 ] 42 root - INFO - Data cleaning ended
+[ 2024-11-08 18:51:58,641 ] 71 root - INFO - Data transforamtion Stage 1 is started
+[ 2024-11-08 18:51:58,648 ] 74 root - INFO - Train test split performed
+[ 2024-11-08 18:51:58,655 ] 87 root - INFO - training and test dataset is created
+[ 2024-11-08 18:51:58,655 ] 33 root - INFO - Preprocessing started
+[ 2024-11-08 18:51:58,655 ] 37 root - INFO - columns are divided by their category and saved in varible
+[ 2024-11-08 18:51:58,655 ] 46 root - INFO - catgorical pipeline created
+[ 2024-11-08 18:51:58,655 ] 54 root - INFO - numerical pipeline created
+[ 2024-11-08 18:51:58,655 ] 61 root - INFO - Columns are transformed by columntransformer
+[ 2024-11-08 18:51:58,655 ] 92 root - INFO - preprocessor is loaded
+[ 2024-11-08 18:51:58,658 ] 98 root - INFO - preprocessor is saved as pickle file
+[ 2024-11-08 18:51:58,912 ] 103 root - INFO - fit and transform performed
+[ 2024-11-08 18:51:58,979 ] 126 root - INFO - Data transforamtion Stage 1 is completed
+[ 2024-11-08 18:51:58,981 ] 23 root - INFO - Data transformation for undersample is started
+[ 2024-11-08 18:51:59,023 ] 33 root - INFO - undersample dataframe is created
+[ 2024-11-08 18:51:59,024 ] 43 root - INFO - Outlier removal process for undersample is started
+[ 2024-11-08 18:51:59,046 ] 65 root - INFO - Outlier removed from loan_int_rate column of undersample
+[ 2024-11-08 18:51:59,075 ] 83 root - INFO - Outlier removed from loan_percent_income column of undersample
+[ 2024-11-08 18:51:59,075 ] 85 root - INFO - Outlier removal process for undersample is completed
