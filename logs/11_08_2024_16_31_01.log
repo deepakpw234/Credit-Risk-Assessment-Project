@@ -1,0 +1,20 @@
+[ 2024-11-08 16:31:03,230 ] 30 root - INFO - Data ingestion is started
+[ 2024-11-08 16:31:03,230 ] 33 root - INFO - GitHub url is created
+[ 2024-11-08 16:31:04,041 ] 37 root - INFO - Dataset is retrieve from the github
+[ 2024-11-08 16:31:04,059 ] 42 root - INFO - Dataset is unzipped and saved
+[ 2024-11-08 16:31:04,059 ] 24 root - INFO - Data cleaning is started
+[ 2024-11-08 16:31:04,093 ] 26 root - INFO - Dataset is loaded in the dataframe
+[ 2024-11-08 16:31:04,106 ] 30 root - INFO - Duplicate rows are dropped from the dataframe
+[ 2024-11-08 16:31:04,112 ] 36 root - INFO - Unrealistic values are deleted from the dataframe
+[ 2024-11-08 16:31:04,112 ] 42 root - INFO - Data cleaning ended
+[ 2024-11-08 16:31:04,112 ] 70 root - INFO - Data transforamtion Stage 1 is started
+[ 2024-11-08 16:31:04,116 ] 73 root - INFO - Train test split performed
+[ 2024-11-08 16:31:04,119 ] 86 root - INFO - training and test dataset is created
+[ 2024-11-08 16:31:04,119 ] 32 root - INFO - Preprocessing started
+[ 2024-11-08 16:31:04,119 ] 36 root - INFO - columns are divided by their category and saved in varible
+[ 2024-11-08 16:31:04,119 ] 45 root - INFO - catgorical pipeline created
+[ 2024-11-08 16:31:04,119 ] 53 root - INFO - numerical pipeline created
+[ 2024-11-08 16:31:04,119 ] 60 root - INFO - Columns are transformed by columntransformer
+[ 2024-11-08 16:31:04,119 ] 91 root - INFO - preprocessor is loaded
+[ 2024-11-08 16:31:04,232 ] 96 root - INFO - fit and transform performed
+[ 2024-11-08 16:31:04,284 ] 119 root - INFO - Data transforamtion Stage 1 is completed

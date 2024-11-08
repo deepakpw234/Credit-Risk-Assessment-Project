@@ -1,0 +1,9 @@
+[ 2024-11-08 12:00:27,003 ] 30 root - INFO - Data ingestion is started
+[ 2024-11-08 12:00:27,003 ] 33 root - INFO - GitHub url is created
+[ 2024-11-08 12:00:27,154 ] 37 root - INFO - Dataset is retrieve from the github
+[ 2024-11-08 12:00:27,171 ] 42 root - INFO - Dataset is unzipped and saved
+[ 2024-11-08 12:00:27,171 ] 24 root - INFO - Data cleaning is started
+[ 2024-11-08 12:00:27,215 ] 26 root - INFO - Dataset is loaded in the dataframe
+[ 2024-11-08 12:00:27,226 ] 30 root - INFO - Duplicate rows are dropped from the dataframe
+[ 2024-11-08 12:00:27,230 ] 36 root - INFO - Unrealistic values are deleted from the dataframe
+[ 2024-11-08 12:00:27,230 ] 42 root - INFO - Data cleaning ended
