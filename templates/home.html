@@ -13,13 +13,13 @@
         <div class="mb-3">
             <label class="form-label"><strong>Age </strong></label>
             <input class="form-control" type="number" name="age"
-                placeholder="Enter your age" min='18' max='80' />
+                placeholder="Enter your age" min='18' max='80' required/>
         </div>
         <br>
         <div class="mb-3">
             <label class="form-label"><strong>Income (in dollars) </strong></label>
-            <input class="form-control" type="number" name="Income" 
-            placeholder="Enter your income"> 
+            <input class="form-control" type="number" name="income" 
+            placeholder="Enter your income" required > 
 
         </div>
         <br>
@@ -27,16 +27,16 @@
             <label class="form-label"><strong>House ownership</strong></label>
             <select class="form-control" name="ownership" placeholder="Enter your house ownership" required>
                 <option class="placeholder" selected disabled value="">Select your house ownership</option>
-                <option value="own">
+                <option value="OWN">
                     OWN
                 </option>
-                <option value="mortgage">
+                <option value="MORTGAGE">
                     MORTGAGE
                 </option>
-                <option value="rent">
+                <option value="RENT">
                     RENT
                 </option>
-                <option value="other">
+                <option value="OTHER">
                     OTHER
                 </option>
             </select>
@@ -45,7 +45,7 @@
         <div class="mb-3">
             <label class="form-label"><strong>Employment years</strong></label>
             <input class="form-control" type="number" name="employment_year" 
-            placeholder="Enter your employment year" min="0" max="50">
+            placeholder="Enter your employment year" min="0" max="50" required>
         </div>
         <br>
 
@@ -53,22 +53,22 @@
             <label class="form-label"><strong>Loan intension</strong></label>
             <select class="form-control" name="loan_intension" placeholder="Loan required for" required>
                 <option class="placeholder" selected disabled value="">Loan required</option>
-                <option value="debtconsolidation">
+                <option value="DEBTCONSOLIDATION">
                     DEBTCONSOLIDATION
                 </option>
-                <option value="education">
+                <option value="EDUCATION">
                     EDUCATION
                 </option>
-                <option value="homeimprovement">
+                <option value="HOMEIMPROVEMENT">
                     HOMEIMPROVEMENT
                 </option>
-                <option value="medical">
+                <option value="MEDICAL">
                     MEDICAL
                 </option>
-                <option value="personal">
+                <option value="PERSONAL">
                     PERSONAL
                 </option>
-                <option value="venture">
+                <option value="VENTURE">
                     VENTURE
                 </option>
             </select>
@@ -80,25 +80,25 @@
             <label class="form-label"><strong>Loan Grade</strong></label>
             <select class="form-control" name="loan_grade" placeholder="Loan grade" required>
                 <option class="placeholder" selected disabled value="">Loan grade</option>
-                <option value="a">
+                <option value="A">
                     A
                 </option>
-                <option value="b">
+                <option value="B">
                     B
                 </option>
-                <option value="c">
+                <option value="C">
                     C
                 </option>
-                <option value="d">
+                <option value="D">
                     D
                 </option>
-                <option value="e">
+                <option value="E">
                     E
                 </option>
-                <option value="f">
+                <option value="F">
                     F
                 </option>
-                <option value="g">
+                <option value="G">
                     G
                 </option>
             </select>
@@ -107,23 +107,23 @@
         <div class="mb-3">
             <label class="form-label"><strong>Loan amount (in dollars)</strong></label>
             <input class="form-control" type="number" name="loan_amount"
-            placeholder="Enter loan amount">
+            placeholder="Enter loan amount" required>
         </div>
         <br>
         <div class="mb-3">
             <label class="form-label"><strong>Loan interest rate</strong></label>
-            <input class="form-control" type="number" name="loan_interest_rate" 
-            placeholder="Enter loan interest rate" min="0" max="100">
+            <input class="form-control" type="number" step="0.01" name="loan_interest_rate" 
+            placeholder="Enter loan interest rate" min="0" max="100" required>
         </div>
         <br>
         <div class="mb-3">
             <label class="form-label"><strong>Are you a history defaulter?</strong></label>
             <select class="form-control" name="default_history" placeholder="default_history" required>
                 <option class="placeholder" selected disabled value="">Select</option>
-                <option value="y">
+                <option value="Y">
                     Y
                 </option>
-                <option value="n">
+                <option value="N">
                     N
                 </option>
             </select>
@@ -132,7 +132,7 @@
         <div class="mb-3">
             <label class="form-label"><strong>Credit history length (in years)</strong></label>
             <input class="form-control" type="number" name="credit_history" 
-            placeholder="Enter credit history length" min="0" max="50">
+            placeholder="Enter credit history length" min="0" max="50" required>
         </div>
         <br>
         <div class="mb-3">
@@ -140,8 +140,8 @@
         </div>
 
     </form>
-    <h2>
-        The person is {{result}}
-    </h2>
+    <p>
+        The person is:- <big><big><strong>{{result}}</strong></big></big>
+    </p>
 </body>
 </html>

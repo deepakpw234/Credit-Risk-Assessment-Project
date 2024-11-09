@@ -1,0 +1,5 @@
+[ 2024-11-09 16:54:00,472 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-11-09 16:54:00,478 ] 97 werkzeug - INFO -  * Debugger PIN: 617-762-873
+[ 2024-11-09 16:54:05,310 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 16:54:05] "POST /home HTTP/1.1" 200 -
+[ 2024-11-09 16:56:25,684 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 16:56:25] "POST /home HTTP/1.1" 200 -
+[ 2024-11-09 16:57:09,062 ] 97 werkzeug - INFO -  * Detected change in 'c:\\users\\deepa\\panda 2024\\credit risk project\\credit risk assessment project\\application.py', reloading

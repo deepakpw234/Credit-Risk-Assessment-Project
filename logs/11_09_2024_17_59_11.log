@@ -1,0 +1,4 @@
+[ 2024-11-09 17:59:12,802 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-11-09 17:59:12,802 ] 97 werkzeug - INFO -  * Debugger PIN: 617-762-873
+[ 2024-11-09 17:59:17,980 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 17:59:17] "POST /home HTTP/1.1" 200 -
+[ 2024-11-09 18:03:06,097 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\deepa\\Panda 2024\\Credit Risk Project\\Credit Risk Assessment Project\\src\\pipelines\\train_pipeline.py', reloading

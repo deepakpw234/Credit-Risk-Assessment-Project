@@ -1,0 +1,8 @@
+[ 2024-11-09 18:30:06,671 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-11-09 18:30:06,675 ] 97 werkzeug - INFO -  * Debugger PIN: 617-762-873
+[ 2024-11-09 18:30:13,265 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:30:13] "[35m[1mPOST /home HTTP/1.1[0m" 500 -
+[ 2024-11-09 18:30:13,343 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:30:13] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-11-09 18:30:13,351 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:30:13] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-11-09 18:30:13,372 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:30:13] "GET /home?__debugger__=yes&cmd=resource&f=console.png&s=nue7LhyiTWvq4gOPo96u HTTP/1.1" 200 -
+[ 2024-11-09 18:30:13,387 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:30:13] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-11-09 18:31:44,466 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\deepa\\Panda 2024\\Credit Risk Project\\Credit Risk Assessment Project\\src\\pipelines\\train_pipeline.py', reloading

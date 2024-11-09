@@ -91,14 +91,16 @@ class DataTransformation1:
 
             logging.info("preprocessor is loaded")
 
+
+            X_train_arr = preprocessor.fit_transform(X_train)
+            X_test_arr = preprocessor.transform(X_test)
+
+
             save_object(
                 self.data_transformation1_config.preprocessor_path,
                 preprocessor
             )
             logging.info("preprocessor is saved as pickle file")
-
-            X_train_arr = preprocessor.fit_transform(X_train)
-            X_test_arr = preprocessor.transform(X_test)
 
             logging.info("fit and transform performed")
 

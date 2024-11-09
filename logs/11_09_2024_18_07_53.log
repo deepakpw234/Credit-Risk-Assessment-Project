@@ -1,0 +1,13 @@
+[ 2024-11-09 18:07:53,988 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-11-09 18:07:53,989 ] 97 werkzeug - INFO -  * Debugger PIN: 617-762-873
+[ 2024-11-09 18:08:04,430 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:08:04] "GET /home HTTP/1.1" 200 -
+[ 2024-11-09 18:08:39,062 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:08:39] "[35m[1mPOST /home HTTP/1.1[0m" 500 -
+[ 2024-11-09 18:08:39,142 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:08:39] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-11-09 18:08:39,145 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:08:39] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-11-09 18:08:39,182 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:08:39] "GET /home?__debugger__=yes&cmd=resource&f=console.png&s=Z8W6rDLUh7uEvzanyDlC HTTP/1.1" 200 -
+[ 2024-11-09 18:08:39,197 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:08:39] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2024-11-09 18:15:43,371 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:15:43] "[35m[1mPOST /home HTTP/1.1[0m" 500 -
+[ 2024-11-09 18:15:43,385 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:15:43] "[36mGET /home?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-11-09 18:15:43,387 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:15:43] "[36mGET /home?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-11-09 18:15:43,407 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:15:43] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png&s=Z8W6rDLUh7uEvzanyDlC HTTP/1.1[0m" 304 -
+[ 2024-11-09 18:15:43,428 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 18:15:43] "[36mGET /home?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

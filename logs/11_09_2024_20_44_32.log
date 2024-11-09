@@ -1,0 +1,4 @@
+[ 2024-11-09 20:44:33,520 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-11-09 20:44:33,536 ] 97 werkzeug - INFO -  * Debugger PIN: 617-762-873
+[ 2024-11-09 20:44:43,270 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 20:44:43] "GET /home HTTP/1.1" 200 -
+[ 2024-11-09 20:45:13,608 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 20:45:13] "POST /home HTTP/1.1" 200 -

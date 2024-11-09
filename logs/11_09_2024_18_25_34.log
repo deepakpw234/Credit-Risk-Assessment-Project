@@ -1,0 +1,44 @@
+[ 2024-11-09 18:25:35,406 ] 30 root - INFO - Data ingestion is started
+[ 2024-11-09 18:25:35,407 ] 33 root - INFO - GitHub url is created
+[ 2024-11-09 18:25:36,180 ] 37 root - INFO - Dataset is retrieve from the github
+[ 2024-11-09 18:25:36,201 ] 42 root - INFO - Dataset is unzipped and saved
+[ 2024-11-09 18:25:36,202 ] 24 root - INFO - Data cleaning is started
+[ 2024-11-09 18:25:36,236 ] 26 root - INFO - Dataset is loaded in the dataframe
+[ 2024-11-09 18:25:36,248 ] 30 root - INFO - Duplicate rows are dropped from the dataframe
+[ 2024-11-09 18:25:36,255 ] 36 root - INFO - Unrealistic values are deleted from the dataframe
+[ 2024-11-09 18:25:36,255 ] 42 root - INFO - Data cleaning ended
+[ 2024-11-09 18:25:36,255 ] 71 root - INFO - Data transforamtion Stage 1 is started
+[ 2024-11-09 18:25:36,258 ] 74 root - INFO - Train test split performed
+[ 2024-11-09 18:25:36,264 ] 87 root - INFO - training and test dataset is created
+[ 2024-11-09 18:25:36,264 ] 33 root - INFO - Preprocessing started
+[ 2024-11-09 18:25:36,264 ] 37 root - INFO - columns are divided by their category and saved in varible
+[ 2024-11-09 18:25:36,264 ] 46 root - INFO - catgorical pipeline created
+[ 2024-11-09 18:25:36,264 ] 54 root - INFO - numerical pipeline created
+[ 2024-11-09 18:25:36,264 ] 61 root - INFO - Columns are transformed by columntransformer
+[ 2024-11-09 18:25:36,264 ] 92 root - INFO - preprocessor is loaded
+[ 2024-11-09 18:25:36,380 ] 103 root - INFO - preprocessor is saved as pickle file
+[ 2024-11-09 18:25:36,380 ] 105 root - INFO - fit and transform performed
+[ 2024-11-09 18:25:36,391 ] 128 root - INFO - Data transforamtion Stage 1 is completed
+[ 2024-11-09 18:25:36,391 ] 23 root - INFO - Data transformation for undersample is started
+[ 2024-11-09 18:25:36,405 ] 33 root - INFO - undersample dataframe is created
+[ 2024-11-09 18:25:36,405 ] 43 root - INFO - Outlier removal process for undersample is started
+[ 2024-11-09 18:25:36,421 ] 65 root - INFO - Outlier removed from loan_int_rate column of undersample
+[ 2024-11-09 18:25:36,425 ] 83 root - INFO - Outlier removed from loan_percent_income column of undersample
+[ 2024-11-09 18:25:36,425 ] 85 root - INFO - Outlier removal process for undersample is completed
+[ 2024-11-09 18:25:36,425 ] 27 root - INFO - Data transformation for oversample is started
+[ 2024-11-09 18:25:36,715 ] 40 root - INFO - oversample dataframe is created
+[ 2024-11-09 18:25:36,718 ] 50 root - INFO - Outlier removal process for oversample is started
+[ 2024-11-09 18:25:36,797 ] 71 root - INFO - Outlier removed from loan_int_rate column of oversample
+[ 2024-11-09 18:25:36,811 ] 88 root - INFO - Outlier removed from loan_percent_income column of oversample
+[ 2024-11-09 18:25:36,812 ] 90 root - INFO - Outlier removal process for oversample is completed
+[ 2024-11-09 18:25:36,812 ] 39 root - INFO - Model training for undersample is started
+[ 2024-11-09 18:25:36,847 ] 61 root - INFO - All classifier model object created
+[ 2024-11-09 18:25:38,748 ] 135 root - INFO - Models hyper tunned
+[ 2024-11-09 18:25:51,579 ] 167 root - INFO - Cross validation score checked
+[ 2024-11-09 18:26:01,336 ] 198 root - INFO - ROC_AUC score checked
+[ 2024-11-09 18:26:01,528 ] 224 root - INFO - Undersample model predicted
+[ 2024-11-09 18:26:01,528 ] 226 root - INFO - Model training for undersample is completed
+[ 2024-11-09 18:26:01,530 ] 31 root - INFO - Model training for oversample is started
+[ 2024-11-09 18:26:01,750 ] 55 root - INFO - Trained the model
+[ 2024-11-09 18:26:01,762 ] 62 root - INFO - Oversample model saved
+[ 2024-11-09 18:26:01,791 ] 86 root - INFO - Model training for oversample is completed"
