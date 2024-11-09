@@ -24,7 +24,7 @@ class DataTransformationOversample:
 
     def create_oversample_dataframe(self,df_train_final):
         try:
-
+            logging.info("Data transformation for oversample is started")
             oversample_x_train = df_train_final.drop("loan_status",axis=1)
             oversample_y_train = df_train_final[['loan_status']]
 
@@ -36,7 +36,8 @@ class DataTransformationOversample:
             oversample_df = pd.concat([Xsm_train,ysm_train],axis=1)
 
             oversample_df = oversample_df.sample(frac=1)
-            print(oversample_df)
+            
+            logging.info("oversample dataframe is created")
 
 
         except Exception as e:
@@ -54,49 +55,39 @@ class DataTransformationOversample:
 
             # Outlier removal from loan_int_rate
             defaulter = oversample_df[oversample_df['loan_status']==1]
-            print(len(defaulter))
+            
             q25, q75 = np.percentile(defaulter['loan_int_rate'],25), np.percentile(defaulter['loan_int_rate'],75)
-            print(f"25th percentile: {q25}, 75th percentile: {q75}")
 
             iqr = (q75-q25)
             cutoff = 1.5*iqr
-            print(f"Inter quartile range is: {iqr}")
-            print(f"Cutoff: {cutoff}")
 
             loan_int_rate_lower = q25-cutoff
             loan_int_rate_upper = q75+cutoff
 
-            print(f"Lower Cutoff: {loan_int_rate_lower}, Upper Cutoff: {loan_int_rate_upper}")
-
             outliers = [x for x in defaulter['loan_int_rate'] if x<loan_int_rate_lower or x>loan_int_rate_upper]
-            print(f"Number of outliers: {len(outliers)}")
-            print(f"outliers: {outliers}")
 
             oversample_df = oversample_df.drop(oversample_df[((oversample_df['loan_int_rate']>loan_int_rate_upper) | (oversample_df['loan_int_rate']<loan_int_rate_lower))].index,axis=0)
-            print(oversample_df)
+
+            logging.info("Outlier removed from loan_int_rate column of oversample")
 
             # Outlier removal from loan_percent_income
             defaulter = oversample_df[oversample_df['loan_status']==1]
-            print(len(defaulter))
+            
             q25, q75 = np.percentile(defaulter['loan_percent_income'],25), np.percentile(defaulter['loan_percent_income'],75)
-            print(f"25th percentile: {q25}, 75th percentile: {q75}")
 
             iqr = (q75-q25)
             cutoff = 1.5*iqr
-            print(f"Inter quartile range is: {iqr}")
-            print(cutoff)
 
             loan_percent_income_lower = q25-cutoff
             loan_percent_income_upper = q75+cutoff
 
-            print(f"Lower Cutoff: {loan_percent_income_lower}, Upper Cutoff: {loan_percent_income_upper}")
-
             outliers = [x for x in defaulter['loan_percent_income'] if x<loan_percent_income_lower or x>loan_percent_income_upper]
-            print(f"Number of outliers: {len(outliers)}")
-            print(f"outliers: {outliers}")
 
             oversample_df = oversample_df.drop(oversample_df[((oversample_df['loan_percent_income']>loan_percent_income_upper) | (oversample_df['loan_percent_income']<loan_percent_income_lower))].index,axis=0)
-            print(oversample_df)
+            
+            logging.info("Outlier removed from loan_percent_income column of oversample")
+
+            logging.info("Outlier removal process for oversample is completed")
 
 
         except Exception as e:

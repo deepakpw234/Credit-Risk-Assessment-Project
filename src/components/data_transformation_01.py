@@ -119,10 +119,10 @@ class DataTransformation1:
             
 
             df_train_final = pd.concat([X_train_scaled,y_train],axis=1)
-            print(df_train_final)
+            
 
             df_test_final = pd.concat([X_test_scaled,y_test],axis=1)
-            print(df_test_final)
+            
             logging.info("Data transforamtion Stage 1 is completed")
 
 

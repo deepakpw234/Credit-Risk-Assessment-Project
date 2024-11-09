@@ -29,7 +29,7 @@ class DataTransformationUndersample:
             undersample_df = pd.concat([defaulter_df,non_defaulter_df],axis=0)
 
             undersample_df = undersample_df.sample(frac=1)
-            print(undersample_df)
+            
             logging.info("undersample dataframe is created")
 
         except Exception as e:
@@ -79,7 +79,7 @@ class DataTransformationUndersample:
             outliers = [x for x in defaulter['loan_percent_income'] if x<loan_percent_income_lower or x>loan_percent_income_upper]
 
             undersample_df = undersample_df.drop(undersample_df[((undersample_df['loan_percent_income']>loan_percent_income_upper) | (undersample_df['loan_percent_income']<loan_percent_income_lower))].index,axis=0)
-            print(undersample_df)
+            
             logging.info("Outlier removed from loan_percent_income column of undersample")
 
             logging.info("Outlier removal process for undersample is completed")

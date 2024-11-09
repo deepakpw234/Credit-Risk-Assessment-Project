@@ -8,4 +8,6 @@ keras
 tensorflow
 dill
 imbalanced-learn
+catboost
+xgboost
 # -e .
