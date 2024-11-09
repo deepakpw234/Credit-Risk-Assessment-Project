@@ -1,0 +1,13 @@
+[ 2024-11-09 10:21:17,106 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-11-09 10:21:17,106 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2024-11-09 10:21:17,108 ] 97 werkzeug - INFO -  * Restarting with stat
+[ 2024-11-09 10:21:17,567 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-11-09 10:21:17,577 ] 97 werkzeug - INFO -  * Debugger PIN: 617-762-873
+[ 2024-11-09 10:21:24,336 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 10:21:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[ 2024-11-09 10:21:24,366 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 10:21:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[ 2024-11-09 10:21:24,502 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 10:21:24] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2024-11-09 10:21:24,515 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 10:21:24] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2024-11-09 10:21:24,559 ] 97 werkzeug - INFO - 127.0.0.1 - - [09/Nov/2024 10:21:24] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=2b6GXstRUG9NuPMLKnLS HTTP/1.1" 200 -
+[ 2024-11-09 10:23:09,254 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Users\\deepa\\Panda 2024\\Credit Risk Project\\Credit Risk Assessment Project\\application.py', reloading
+[ 2024-11-09 10:23:09,295 ] 97 werkzeug - INFO -  * Restarting with stat

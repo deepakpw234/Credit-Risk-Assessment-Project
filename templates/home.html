@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Risk Prediction</title>
+</head>
+<body>
+    <form action="{{url_for('credit_risk_prediction')}}" method="post">
+
+        <h1>Credit Risk Prediction</h1>
+
+        <div class="mb-3">
+            <label class="form-label"><strong>Age </strong></label>
+            <input class="form-control" type="number" name="age"
+                placeholder="Enter your age" min='18' max='80' />
+        </div>
+        <br>
+        <div class="mb-3">
+            <label class="form-label"><strong>Income (in dollars) </strong></label>
+            <input class="form-control" type="number" name="Income" 
+            placeholder="Enter your income"> 
+
+        </div>
+        <br>
+        <div class="mb-3">
+            <label class="form-label"><strong>House ownership</strong></label>
+            <select class="form-control" name="ownership" placeholder="Enter your house ownership" required>
+                <option class="placeholder" selected disabled value="">Select your house ownership</option>
+                <option value="own">
+                    OWN
+                </option>
+                <option value="mortgage">
+                    MORTGAGE
+                </option>
+                <option value="rent">
+                    RENT
+                </option>
+                <option value="other">
+                    OTHER
+                </option>
+            </select>
+        </div>
+        <br>
+        <div class="mb-3">
+            <label class="form-label"><strong>Employment years</strong></label>
+            <input class="form-control" type="number" name="employment_year" 
+            placeholder="Enter your employment year" min="0" max="50">
+        </div>
+        <br>
+
+        <div class="mb-3">
+            <label class="form-label"><strong>Loan intension</strong></label>
+            <select class="form-control" name="loan_intension" placeholder="Loan required for" required>
+                <option class="placeholder" selected disabled value="">Loan required</option>
+                <option value="debtconsolidation">
+                    DEBTCONSOLIDATION
+                </option>
+                <option value="education">
+                    EDUCATION
+                </option>
+                <option value="homeimprovement">
+                    HOMEIMPROVEMENT
+                </option>
+                <option value="medical">
+                    MEDICAL
+                </option>
+                <option value="personal">
+                    PERSONAL
+                </option>
+                <option value="venture">
+                    VENTURE
+                </option>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="mb-3">
+            <label class="form-label"><strong>Loan Grade</strong></label>
+            <select class="form-control" name="loan_grade" placeholder="Loan grade" required>
+                <option class="placeholder" selected disabled value="">Loan grade</option>
+                <option value="a">
+                    A
+                </option>
+                <option value="b">
+                    B
+                </option>
+                <option value="c">
+                    C
+                </option>
+                <option value="d">
+                    D
+                </option>
+                <option value="e">
+                    E
+                </option>
+                <option value="f">
+                    F
+                </option>
+                <option value="g">
+                    G
+                </option>
+            </select>
+        </div>
+        <br>
+        <div class="mb-3">
+            <label class="form-label"><strong>Loan amount (in dollars)</strong></label>
+            <input class="form-control" type="number" name="loan_amount"
+            placeholder="Enter loan amount">
+        </div>
+        <br>
+        <div class="mb-3">
+            <label class="form-label"><strong>Loan interest rate</strong></label>
+            <input class="form-control" type="number" name="loan_interest_rate" 
+            placeholder="Enter loan interest rate" min="0" max="100">
+        </div>
+        <br>
+        <div class="mb-3">
+            <label class="form-label"><strong>Are you a history defaulter?</strong></label>
+            <select class="form-control" name="default_history" placeholder="default_history" required>
+                <option class="placeholder" selected disabled value="">Select</option>
+                <option value="y">
+                    Y
+                </option>
+                <option value="n">
+                    N
+                </option>
+            </select>
+        </div>
+        <br>
+        <div class="mb-3">
+            <label class="form-label"><strong>Credit history length (in years)</strong></label>
+            <input class="form-control" type="number" name="credit_history" 
+            placeholder="Enter credit history length" min="0" max="50">
+        </div>
+        <br>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Submit" required />
+        </div>
+
+    </form>
+    <h2>
+        The person is {{result}}
+    </h2>
+</body>
+</html>
